@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@drawable/pop"
+    android:paddingTop="10dp"
+    android:paddingBottom="25dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="编号："
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型:"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="70dp"
+         android:text="直流"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态:"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:text="空闲"
+        android:textSize="15dp"
+        android:textColor="#ff0000"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="三号充电口"-->
+<!--        android:textSize="15dp"-->
+<!--        android:layout_marginTop="75dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="75dp"-->
+<!--        android:layout_marginLeft="120dp"-->
+<!--        android:text="空闲"-->
+<!--        android:textSize="17dp"-->
+<!--        android:textColor="#00ff00"/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_book"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/yuanjiao"
+        android:text="预约"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:textColor="@color/defaultColor" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_dh"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/yuanjiao"
+        android:text="导航"
+        android:textSize="15dp"
+        android:textColor="@color/defaultColor" />
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

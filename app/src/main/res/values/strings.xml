@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">煦飞</string>
+    <!--zxing-->
+    <string name="msg_camera_framework_bug">相机被占用或没有相机权限，请检查</string>
+    <string name="button_ok">退出</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="account">499887880@qq.com</string>
+    <string name="password">*********</string>
+    <string name="title_activity_charge_info">charge_info</string>
+    <string name="service_address">39.97.99.126:8088</string>
+    <string name="service_address_save">192.168.0.104 192.168.0.115 39.97.99.126 192.168.1.105 10.101.175.136</string>
+
+
+
+</resources>

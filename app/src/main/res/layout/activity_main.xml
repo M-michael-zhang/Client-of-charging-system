@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="地图"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right">
+    <ImageView
+        android:id="@+id/toMessage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/message"
+        android:scaleType="fitEnd"
+        />
+</LinearLayout>
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        >
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+       >
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/icon_map"
+                    android:tint="#ffffff"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/icon_map" />
+
+
+                <TextView
+                    android:id="@+id/map_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="首页"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/contacts_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/icon_charge"
+                    android:tint="#ffffff"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/icon_charge" />
+                <TextView
+                    android:id="@+id/charge_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="充电"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/icon_my"
+                    android:tint="#ffffff"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:orientation="vertical"
+                    android:src="@drawable/icon_my" />
+
+
+
+                <TextView
+                    android:id="@+id/my_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我的"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

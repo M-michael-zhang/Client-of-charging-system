@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/colorPrimary">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="地图"-->
+            <!--android:textSize="20dp"-->
+
+            <!--android:textColor="#ffffff"-->
+            <!--android:gravity="center_horizontal"/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:weightSum="6">
+        <LinearLayout
+            android:id="@+id/toChangeCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金华市"></TextView>
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/zhankai"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <AutoCompleteTextView
+                    android:id="@+id/et_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入查询地点"
+                    android:cursorVisible="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#c0c0c0"
+                    android:textSize="15dp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/orange_light"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/search_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7.5dp"
+                    android:text="查询"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/yuanjiao"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:background="#ffffff"-->
+<!--       >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_city"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@null"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:text="金华市">-->
+<!--        </TextView>-->
+
+
+<!--&lt;!&ndash;        <AutoCompleteTextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/et_key"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="280dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignParentBottom="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            android:layout_marginBottom="7dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@null"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:hint="请输入查询地点"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:cursorVisible="true"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            android:textColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColorHint="#c0c0c0"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="20dp"/>&ndash;&gt;-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginLeft="45dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:layout_toLeftOf="@+id/img_account"-->
+<!--            android:background="@color/orange_light"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img_search"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_toRightOf="@+id/et_key"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/icon_search" />-->
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </com.baidu.mapapi.map.MapView>
+        <Button
+            android:id="@+id/toMyLocation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mylocation"></Button>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

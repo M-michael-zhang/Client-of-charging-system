@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/toReturn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="我的充电"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/transList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginLeft="7dp"-->
+<!--                android:layout_marginRight="7dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:background="#ffffff"-->
+<!--                android:weightSum="4">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:gravity="center">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="@color/colorPrimary"-->
+<!--                        android:text="预约订单"></TextView>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:text="旭日北大道103号阿萨大厦"></TextView>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="订单号:202003232227123"></TextView>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="时间：20200323-22:22 到 20200323-23:22"></TextView>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="金额:5元"></TextView>-->
+
+<!--                </LinearLayout>-->
+<!--                <View-->
+<!--                    android:layout_width="3dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginBottom="20dp"-->
+<!--                    android:background="#ededed"></View>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textColor="#DC143C"-->
+<!--                        android:text="已完成"></TextView>-->
+<!--                    <Button-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:text="结束预约"-->
+<!--                        android:textColor="#ffffff"-->
+<!--                        android:textSize="13dp"-->
+<!--                        android:background="@drawable/yuanjiao"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

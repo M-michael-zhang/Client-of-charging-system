@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/toReturn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="申请私人桩"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff">
+        <EditText
+            android:id="@+id/apply_name"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+
+            android:hint="请输入姓名"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/count"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff">
+        <EditText
+            android:id="@+id/applt_add"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+
+            android:hint="请输入地址"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/add"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:id="@+id/apply_phone"
+            android:hint="请输入联系方式"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/phone"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:textSize="17dp"
+            android:hint="充电桩接口数量"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <CheckBox
+                android:id="@+id/box1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao"
+                android:text="1"
+                android:theme="@style/MyCheckBox"
+                android:textColor="#ffffff"
+                android:checked="true"
+                android:layout_marginLeft="140dp"
+                />
+            <CheckBox
+                android:id="@+id/box2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao"
+                android:text="2"
+                android:theme="@style/MyCheckBox"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                />
+            <CheckBox
+                android:id="@+id/box3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiao"
+                android:text="3"
+                android:theme="@style/MyCheckBox"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:background="#ffffff">
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:hint="其他接口数量"/>
+
+
+    </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       >
+
+   </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:text="提交申请"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="@drawable/yuanjiao"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="contents_text">#000000</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_minor_text">#c0c0c0</color>
+    <color name="result_points">#99cc00</color>
+    <color name="result_text">#ffffff</color>
+    <color name="result_view">#000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="react">#ffffff</color>
+    <color name="scanLineColor">#ffffff</color>
+    <color name="defaultColor">#ffffff</color>
+    <color name="orange_light">#3498db</color>
+    <color name="orange_text">#ff5000</color>
+    <color name="red_text">#DC143C</color>
+    <color name="icon_actity">#f6a07b</color>
+    <color name="icon_default">#ffffff</color>
+    <color name="background_huise">#ededed</color>
+</resources>
